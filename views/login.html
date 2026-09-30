@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #fff7ef; font-family: Arial, sans-serif; color: #101828; }
+    form { width: min(400px, 92vw); display: grid; gap: 14px; padding: 28px; border: 1px solid #e3e7ee; border-radius: 8px; background: #fff; box-shadow: 0 10px 25px rgba(16, 24, 40, .08); }
+    h1 { margin: 0 0 6px; text-align: center; }
+    input, button { min-height: 44px; border-radius: 6px; border: 1px solid #d0d5dd; padding: 0 12px; font-size: 15px; }
+    button { border-color: #e50914; background: #e50914; color: #fff; font-weight: 700; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <form action="/login" method="POST">
+    <h1>Sign In</h1>
+    <input type="email" placeholder="Email" name="email" required>
+    <input type="password" placeholder="Password" name="password" required>
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>
